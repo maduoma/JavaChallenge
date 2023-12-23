@@ -6,5 +6,10 @@ public class Main {
         System.out.println("===========================================");
         Increment.increment();
         System.out.println("============================================");
+
+        System.out.println("Hello and welcome to our second challenge!");
+        System.out.println("============================================");
+        StringChallenge.stringDemo();
+        System.out.println("============================================");
     }
 }
