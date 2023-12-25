@@ -10,6 +10,11 @@ public class Main {
         System.out.println("Hello and welcome to our second challenge!");
         System.out.println("============================================");
         StringChallenge.stringDemo();
-        System.out.println("============================================");
+        System.out.println("=====Multithreading with Runnable Interface========");
+
+        Multithreading multithreading = new Multithreading();
+
+        Thread thread = new Thread(multithreading);
+        thread.start();
     }
 }
