@@ -16,5 +16,15 @@ public class Main {
 
         Thread thread = new Thread(multithreading);
         thread.start();
+
+        VarargsDemo.varargsDemo("Hello", "World", "Varargs", "Demo");
+
+        int sum = VarargsDemo.addNumbers(1, 2, 3, 4, 5);
+
+        VarargsDemo.varargsDemo("Sum of numbers: " + sum);
+
+        System.out.println(VarargsDemo.addNumbers2("Sum: ", 1, 2, 3, 4, 5));    // Prints "Sum: 15"
+        System.out.println(VarargsDemo.addNumbers2("Total: ", 10, 20));         // Prints "Total: 30"
+        System.out.println(VarargsDemo.addNumbers2("Empty sum: "));             // Prints "Empty sum: 0"
     }
 }
